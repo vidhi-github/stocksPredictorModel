@@ -3,6 +3,7 @@
 This project explores stock price forecasting by combining traditional statistical methods and modern deep learning techniques. It demonstrates how ARIMA, LSTM, and a Hybrid ARIMA-LSTM model can capture different patterns in financial time series data and improve prediction accuracy.
 
 🔍 Modeling Approaches
+
 ##📘 ARIMA (AutoRegressive Integrated Moving Average)
 A statistical time series model used for forecasting based on past values and error terms
 Works well for linear patterns and short-term predictions
@@ -12,6 +13,7 @@ Hyperparameters (p, d, q) selected using techniques like AIC, MINIC, and ESACF
 ⚠️ Limitation: Struggles with non-linear trends and market volatility
 
 ##🤖 LSTM (Long Short-Term Memory)
+
 A type of Recurrent Neural Network (RNN) designed to learn long-term dependencies
 Effective in capturing:
 Non-linear patterns
@@ -34,6 +36,7 @@ Combines the strengths of both approaches:
 
 ARIMA → Models linear components
 LSTM → Captures residual non-linear patterns
+
 ⚙️ Workflow
 Apply ARIMA to model and remove linear trends
 Pass ARIMA residuals to LSTM
@@ -43,6 +46,7 @@ Combine outputs for final prediction
 🚀 Particularly useful for financial data with mixed linear and non-linear characteristics
 
 ##🛠️ Tech Stack
+
 1. Python 🐍
 Core programming language used for data processing, modeling, and deployment.
 2. TensorFlow / Keras 🤖
@@ -55,11 +59,13 @@ Used to create an interactive web application for visualizing predictions and co
 Python library used to fetch real-time and historical stock market data.
 
 ###📊 Key Insights
+
 ARIMA → Best for simple, linear, short-term forecasting
 LSTM → Best for complex, non-linear, long-term dependencies
 Hybrid Model → Best overall performance by combining both approaches
 
 ###🌐 Deployment
+
 The models are deployed using a Streamlit web application, allowing users to:
 
 📊 Select stocks dynamically
@@ -80,7 +86,9 @@ pip install -r requirements.txt
 streamlit run app.py
 
 🚀 Live Demo
+
 👉 Check out the deployed web app: [Stock Price Predictor](https://stockpredictsp500.streamlit.app/)
 
 ⭐ Contribution
+
 Feel free to fork this repository, improve it, and submit pull requests!
