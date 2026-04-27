@@ -5,9 +5,13 @@ This project explores stock price forecasting by combining traditional statistic
 🔍 Modeling Approaches
 
 ##📘 ARIMA (AutoRegressive Integrated Moving Average)
+
 A statistical time series model used for forecasting based on past values and error terms
+
 Works well for linear patterns and short-term predictions
+
 Requires stationary data, achieved through differencing and transformation
+
 Hyperparameters (p, d, q) selected using techniques like AIC, MINIC, and ESACF
 
 ⚠️ Limitation: Struggles with non-linear trends and market volatility
@@ -15,17 +19,24 @@ Hyperparameters (p, d, q) selected using techniques like AIC, MINIC, and ESACF
 ##🤖 LSTM (Long Short-Term Memory)
 
 A type of Recurrent Neural Network (RNN) designed to learn long-term dependencies
+
 Effective in capturing:
+
 Non-linear patterns
 Trends
 Temporal dependencies
 Uses sliding window sequences and MinMaxScaler normalization
+
 Architecture includes:
+
 Multiple LSTM layers
 Dropout (to prevent overfitting)
 Dense output layer
+
 Optimized using:
+
 Adam optimizer
+
 Mean Squared Error (MSE) loss
 
 ✅ Strength: Handles complex and volatile market behavior better than traditional models
@@ -35,6 +46,7 @@ Mean Squared Error (MSE) loss
 Combines the strengths of both approaches:
 
 ARIMA → Models linear components
+
 LSTM → Captures residual non-linear patterns
 
 ⚙️ Workflow
@@ -61,7 +73,9 @@ Python library used to fetch real-time and historical stock market data.
 ###📊 Key Insights
 
 ARIMA → Best for simple, linear, short-term forecasting
+
 LSTM → Best for complex, non-linear, long-term dependencies
+
 Hybrid Model → Best overall performance by combining both approaches
 
 ###🌐 Deployment
@@ -69,21 +83,26 @@ Hybrid Model → Best overall performance by combining both approaches
 The models are deployed using a Streamlit web application, allowing users to:
 
 📊 Select stocks dynamically
+
 📈 Visualize predictions
+
 🔍 Compare ARIMA, LSTM, and Hybrid outputs interactively
 
-##🚀 How to Run
-# Clone the repository
-git clone https://github.com/your_username/your_project.git
+## 🚀 How to Run
 
-# Navigate to project folder
-cd your_project
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Streamlit app
-streamlit run app.py
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your_username/your_project.git
+   cd your_project
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the Streamlit app:
+   ```bash
+   streamlit run app.py
+   ```
 
 🚀 Live Demo
 
