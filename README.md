@@ -20,20 +20,20 @@ Hyperparameters (p, d, q) selected using techniques like AIC, MINIC, and ESACF
 
 A type of Recurrent Neural Network (RNN) designed to learn long-term dependencies
 
-Effective in capturing:
+##Effective in capturing:
 
 Non-linear patterns
 Trends
 Temporal dependencies
 Uses sliding window sequences and MinMaxScaler normalization
 
-Architecture includes:
+##Architecture includes:
 
 Multiple LSTM layers
 Dropout (to prevent overfitting)
 Dense output layer
 
-Optimized using:
+##Optimized using:
 
 Adam optimizer
 
@@ -54,8 +54,10 @@ Apply ARIMA to model and remove linear trends
 Pass ARIMA residuals to LSTM
 Combine outputs for final prediction
 
-✅ Advantage: Improves accuracy by leveraging both statistical and deep learning insights
-🚀 Particularly useful for financial data with mixed linear and non-linear characteristics
+✅ Advantage: 
+🚀 Improves accuracy by leveraging both statistical and deep learning insights.
+
+🚀 Particularly useful for financial data with mixed linear and non-linear characteristics.
 
 ##🛠️ Tech Stack
 
