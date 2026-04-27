@@ -2,6 +2,7 @@
 
 This project explores stock price forecasting by combining traditional statistical methods and modern deep learning techniques. It demonstrates how ARIMA, LSTM, and a Hybrid ARIMA-LSTM model can capture different patterns in financial time series data and improve prediction accuracy.
 
+
 🔍 Modeling Approaches
 
 ##📘 ARIMA (AutoRegressive Integrated Moving Average)
@@ -15,6 +16,7 @@ Requires stationary data, achieved through differencing and transformation
 Hyperparameters (p, d, q) selected using techniques like AIC, MINIC, and ESACF
 
 ⚠️ Limitation: Struggles with non-linear trends and market volatility
+
 
 ##🤖 LSTM (Long Short-Term Memory)
 
@@ -39,7 +41,8 @@ Adam optimizer
 
 Mean Squared Error (MSE) loss
 
-✅ Strength: Handles complex and volatile market behavior better than traditional models
+✅ Strength: Handles complex and volatile market behavior better than traditional models.
+
 
 ##🔗 Hybrid ARIMA-LSTM Model
 
@@ -59,6 +62,7 @@ Combine outputs for final prediction
 
 🚀 Particularly useful for financial data with mixed linear and non-linear characteristics.
 
+
 ##🛠️ Tech Stack
 
 1. Python 🐍
@@ -72,13 +76,15 @@ Used to create an interactive web application for visualizing predictions and co
 5. yFinance 📈
 Python library used to fetch real-time and historical stock market data.
 
+
 ###📊 Key Insights
 
 ARIMA → Best for simple, linear, short-term forecasting
 
 LSTM → Best for complex, non-linear, long-term dependencies
 
-Hybrid Model → Best overall performance by combining both approaches
+Hybrid Model → Best overall performance by combining both approaches.
+
 
 ###🌐 Deployment
 
@@ -88,7 +94,8 @@ The models are deployed using a Streamlit web application, allowing users to:
 
 📈 Visualize predictions
 
-🔍 Compare ARIMA, LSTM, and Hybrid outputs interactively
+🔍 Compare ARIMA, LSTM, and Hybrid outputs interactively.
+
 
 ## 🚀 How to Run
 
@@ -109,6 +116,7 @@ The models are deployed using a Streamlit web application, allowing users to:
 🚀 Live Demo
 
 👉 Check out the deployed web app: [Stock Price Predictor](https://stockpredictsp500.streamlit.app/)
+
 
 ⭐ Contribution
 
